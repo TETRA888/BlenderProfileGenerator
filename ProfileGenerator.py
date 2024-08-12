@@ -5,7 +5,7 @@ import random
 def create_plane():
     bpy.ops.mesh.primitive_plane_add()
     bpy.ops.object.mode_set(mode = 'EDIT') # Ensure in edit mode for proceeding commands to work
-    bpy.ops.mesh.subdivide(number_cuts=16)
+    bpy.ops.mesh.subdivide(number_cuts=4)
     current_plane = bpy.context.active_object
     return current_plane
 
